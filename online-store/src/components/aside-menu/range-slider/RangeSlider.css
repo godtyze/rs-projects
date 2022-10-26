@@ -1,0 +1,33 @@
+.noUi-target {
+  max-width: 300px;
+  width: 100%;
+  height: 10px;
+  background: white;
+  align-self: center;
+  justify-self: center;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: -35px;
+}
+
+.noUi-connect {
+  background-color: bisque;
+}
+
+.noUi-handle {
+  border-radius: 100px;
+  background-color: #17181c;
+}
+.noUi-handle::before {
+  display: none;
+}
+.noUi-handle::after {
+  display: none;
+}
+.noUi-handle.noUi-handle-lower, .noUi-handle.noUi-handle-upper {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=RangeSlider.css.map */

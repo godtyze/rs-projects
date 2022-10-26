@@ -1,0 +1,135 @@
+@use 'fonts';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.header {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 0 0 20px 20px;
+
+  @media (max-width: 400px) {
+    padding: 15px 10px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &-logo {
+      background: url("../assets/svg/logo.svg") no-repeat center center;
+      width: 65px;
+      height: 65px;
+      background-size: contain;
+    }
+
+    &-text {
+      @media (max-width: 400px) {
+        font-size: 21px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__cart {
+    display: flex;
+    background: url("../assets/svg/cart.svg") no-repeat center center;
+    margin-left: auto;
+    width: 65px;
+    height: 65px;
+    background-size: contain;
+
+    span {
+      display: inline-block;
+      align-self: end;
+      min-width: 24px;
+      background: brown;
+      text-align: center;
+      color: white;
+      border: brown 5px solid;
+      border-radius: 50%;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  padding: 20px;
+  flex-grow: 1;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 5px;
+    align-items: center;
+  }
+}
+
+.products {
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #17181c;
+  border-radius: 20px 20px 0 0;
+
+  @media (max-width: 400px) {
+    padding: 15px 10px;
+  }
+
+  &__link-github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../assets/github.png') no-repeat center center;
+    background-size: contain;
+    transition: 0.2s ease-in-out;
+    filter: invert(100%);
+  }
+
+  &__link-rs {
+    width: 120px;
+    height: 50px;
+    background: url('../assets/svg/rs_school_js.svg') no-repeat center center;
+    display: inline-block;
+    background-size: contain;
+    transition: 0.2s ease-in-out;
+    filter: invert(100%);
+  }
+
+  &__link-github:hover,
+  &__link-rs:hover {
+    filter: invert(73%) sepia(8%) saturate(657%) hue-rotate(7deg) brightness(92%) contrast(97%);
+  }
+}
+

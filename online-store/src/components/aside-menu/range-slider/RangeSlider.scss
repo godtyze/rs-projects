@@ -1,0 +1,36 @@
+.noUi-target {
+  max-width: 300px;
+  width: 100%;
+  height: 10px;
+  background: white;
+  align-self: center;
+  justify-self: center;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: -35px;
+}
+
+
+
+.noUi-connect {
+  background-color: bisque;
+}
+
+.noUi-handle {
+  border-radius: 100px;
+  background-color: #17181c;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &.noUi-handle-lower, &.noUi-handle-upper {
+    width: 20px;
+    height: 20px;
+  }
+}
