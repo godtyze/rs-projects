@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+}
+.header .title {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  flex: 1 0 auto;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .wrapper {
+    gap: 0;
+  }
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  padding: 10px;
+}
+.board__title {
+  font-weight: 400;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.28);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  max-width: 399px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 17px 50px;
+  outline: 1px solid rgba(0, 0, 0, 0.28);
+}
+@media (max-width: 420px) {
+  .game {
+    max-width: 300px;
+  }
+}
+.game .space {
+  width: 133px;
+  height: 134px;
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+}
+@media (max-width: 420px) {
+  .game .space {
+    width: 100px;
+    height: 100px;
+  }
+}
+.game .space:hover {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.game .circle {
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  animation: draw 0.9s forwards;
+}
+.game .cross {
+  width: 100%;
+  height: 100%;
+}
+.game .first,
+.game .second {
+  stroke-dasharray: 135;
+  stroke-dashoffset: 135;
+  animation: draw 0.5s forwards;
+}
+.game .second {
+  animation-delay: 0.5s;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.winner {
+  background-color: green;
+}
+
+.game-result {
+  padding: 5px;
+}
+
+.result {
+  padding: 2px;
+  font-family: inherit;
+  font-size: inherit;
+}
+@media (max-width: 420px) {
+  .result {
+    font-size: 1.2rem;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.reset {
+  font-size: 20px;
+  font-family: inherit;
+  color: tomato;
+  background-color: white;
+  border: 1px solid tomato;
+  padding: 5px;
+  transition: border, color, 0.3s;
+}
+.reset:hover {
+  cursor: pointer;
+  color: #33DBFF;
+  border: 1px solid #33DBFF;
+  transition: border, color, 0.5s;
+}
+.reset:focus {
+  outline: none;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex: 0 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 17px 50px;
+}
+.footer__link {
+  font-family: inherit;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 1.3rem;
+  transition: color ease-in-out 0.1s;
+}
+.footer__link:hover {
+  color: #BDAE82;
+}
+.footer .year {
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
