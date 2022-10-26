@@ -1,0 +1,23 @@
+.inputs__update-name,
+.inputs__create-name {
+  width: 215px;
+  height: 40px;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #f8e8bb;
+  color: #f8e8bb;
+  background-color: transparent;
+}
+.inputs__update-name::placeholder,
+.inputs__create-name::placeholder {
+  color: #f8e8bb;
+}
+
+.inputs__update-color,
+.inputs__create-color {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=inputs-field.css.map */

@@ -1,0 +1,75 @@
+.overlay {
+  display: none;
+}
+.overlay.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 40;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+.overlay.active:hover {
+  cursor: pointer;
+}
+
+.modal-window {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 500;
+  max-width: 400px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .modal-window {
+    max-width: 230px;
+  }
+}
+.modal-window__btn {
+  align-self: flex-end;
+  position: absolute;
+  top: -55px;
+  right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f8e8bb;
+  border-radius: 100px;
+  transition: all ease-in-out 0.2s;
+}
+.modal-window__btn:hover {
+  background-color: #f8e8bb;
+  border-color: #f8e8bb;
+}
+.modal-window__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  height: 100px;
+  padding: 10px;
+  max-width: 375px;
+  width: 100%;
+  column-gap: 30px;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .modal-window__main {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=modal-window.css.map */

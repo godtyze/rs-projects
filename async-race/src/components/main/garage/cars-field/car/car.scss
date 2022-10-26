@@ -1,0 +1,41 @@
+@use '../../../../../consts/variables' as v;
+
+.car__container {
+  display: flex;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+
+  &__name {
+    color: v.$headerColor;
+  }
+
+  &__img {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    border-bottom: 0.3rem dashed v.$headerColor;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.car__settings-buttons {
+  display: flex;
+  max-width: 110px;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.car__race-buttons {
+  display: flex;
+  column-gap: 7px;
+}

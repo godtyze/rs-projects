@@ -1,0 +1,59 @@
+.btn {
+  max-width: 190px;
+  width: 100%;
+  border: 2px solid #f8e8bb;
+  color: #f8e8bb;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: color ease-in-out 0.3s;
+}
+.btn:hover {
+  color: #FFFFFF;
+}
+.btn:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.btn.active {
+  color: black;
+  background-color: #f8e8bb;
+  transition: color ease-in-out 0.3s;
+}
+.btn.active:hover {
+  color: #FFFFFF;
+}
+
+.nav__btn {
+  height: 70px;
+  font-size: 28px;
+}
+
+.garage__btn,
+.inputs__update-btn,
+.inputs__create-btn {
+  max-width: 150px;
+  font-size: 16px;
+  height: 40px;
+  background-color: #f8e8bb;
+  color: black;
+}
+
+.car__btn {
+  background-color: #f8e8bb;
+  max-width: 90px;
+  color: black;
+  height: 35px;
+}
+
+.pages__btn-prev,
+.pages__btn-next {
+  max-width: 32px;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: #f8e8bb;
+  color: black;
+}
+
+/*# sourceMappingURL=button.css.map */

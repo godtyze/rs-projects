@@ -1,0 +1,33 @@
+.garage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+}
+.garage__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.garage__inputs-update, .garage__inputs-create {
+  display: flex;
+  column-gap: 10px;
+}
+.garage__buttons {
+  display: flex;
+  column-gap: 10px;
+}
+.garage__title {
+  color: #f8e8bb;
+}
+.garage__cars-field {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 100px;
+  row-gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=garage.css.map */

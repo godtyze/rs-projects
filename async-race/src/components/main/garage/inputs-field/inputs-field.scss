@@ -1,0 +1,22 @@
+@use '../../../../consts/variables' as v;
+
+.inputs__update-name,
+.inputs__create-name {
+  width: 215px;
+  height: 40px;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid v.$mainColor;
+  color: v.$mainColor;
+  background-color: transparent;
+
+  &::placeholder {
+    color: v.$mainColor;
+  }
+}
+.inputs__update-color,
+.inputs__create-color {
+  width: 40px;
+  height: 40px;
+}

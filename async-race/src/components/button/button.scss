@@ -1,0 +1,63 @@
+@use '../../consts/variables' as v;
+
+.btn {
+  max-width: 190px;
+  width: 100%;
+  border: 2px solid v.$mainColor;
+  color: v.$mainColor;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: color ease-in-out 0.3s;
+
+  &:hover {
+    color: v.$headerColor;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  &.active {
+    color: v.$secondaryColor;
+    background-color: v.$mainColor;
+    transition: color ease-in-out 0.3s;
+
+    &:hover {
+      color: v.$headerColor;
+    }
+  }
+}
+
+.nav__btn {
+  height: 70px;
+  font-size: 28px;
+}
+
+.garage__btn,
+.inputs__update-btn,
+.inputs__create-btn {
+  max-width: 150px;
+  font-size: 16px;
+  height: 40px;
+  background-color: v.$mainColor;
+  color: v.$secondaryColor;
+}
+
+.car__btn {
+  background-color: v.$mainColor;
+  max-width: 90px;
+  color: v.$secondaryColor;
+  height: 35px;
+}
+
+.pages__btn-prev,
+.pages__btn-next {
+  max-width: 32px;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: v.$mainColor;
+  color: v.$secondaryColor;
+}

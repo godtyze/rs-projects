@@ -1,0 +1,41 @@
+@use '../../consts/variables' as v;
+
+.footer {
+  padding: 20px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-self: center;
+  color: v.$headerColor;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link-github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/github.png") no-repeat center center;
+    background-size: contain;
+    filter: invert(100%);
+    transition: filter ease-in-out 0.3s;
+
+    &:hover {
+      filter: invert(77%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+  }
+
+  &__link-rs {
+    display: inline-block;
+    background: url("../../assets/svg/rs_school_js.svg") no-repeat center center;
+    background-size: contain;
+    width: 120px;
+    height: 50px;
+    filter: invert(100%);
+    transition: filter ease-in-out 0.3s;
+
+    &:hover {
+      filter: invert(77%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use '../../../consts/variables' as v;
+
+.winners {
+  display: none;
+  align-items: center;
+  max-width: 520px;
+  width: 100%;
+  flex-direction: column;
+  color: v.$headerColor;
+  row-gap: 20px;
+
+  &__pages {
+    width: 20%;
+  }
+}
+
+.row,
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: v.$headerColor;
+  background-color: RGBA(70, 90, 90, 0.56);
+
+  &__name,
+  &__image,
+  .car__img,
+  .row-name {
+    width: 25%;
+  }
+
+
+  &__best-time,
+  &__wins {
+    cursor: pointer;
+    width: 20%;
+  }
+}
+
+.table-header__num,
+.row-number,
+.row-wins,
+.row-time {
+  width: 20%;
+}

@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  column-gap: 20px;
+  align-items: center;
+
+  @media (max-width: 880px) {
+    order: 2;
+  }
+}

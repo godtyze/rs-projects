@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+@media (max-width: 880px) {
+  .header {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+.header__title {
+  margin-left: auto;
+  font-size: 75px;
+  color: #f8e8bb;
+}
+@media (max-width: 880px) {
+  .header__title {
+    margin-left: 0;
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

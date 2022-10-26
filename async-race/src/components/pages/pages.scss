@@ -1,0 +1,22 @@
+@use '../../consts/variables' as v;
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+
+  &__counter {
+    color: v.$headerColor;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+    justify-content: center;
+    column-gap: 25px;
+  }
+}
