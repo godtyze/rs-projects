@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #22254b;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #373b69;
+  padding: 1rem;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 45px;
+  padding: 0.7rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: aliceblue;
+}
+.search::placeholder {
+  color: #7378c5;
+}
+.search:focus {
+  outline: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+  flex: 1 0 auto;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: #373b69;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  max-height: 550px;
+}
+.movie:hover .overview {
+  transform: translateY(0);
+}
+.movie img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.movie-title {
+  font-size: 1.2rem;
+}
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.movie-info p {
+  background-color: #22254b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.movie-score.green {
+  color: #6df86d;
+}
+.movie-score.orange {
+  color: orange;
+}
+.movie-score.red {
+  color: red;
+}
+
+.poster {
+  height: 80%;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+.overview-header {
+  margin-bottom: 10px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: #373b69;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex: 0 0 auto;
+}
+.footer__link {
+  font-family: inherit;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3rem;
+  transition: color ease-in-out 0.1s;
+}
+.footer__link:hover {
+  color: #BDAE82;
+}
+.footer .year {
+  color: blanchedalmond;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
