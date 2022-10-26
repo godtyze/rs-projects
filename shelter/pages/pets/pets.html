@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pets.css">
+    <title>Cozy House</title>
+</head>
+<body>
+<div class="overlay"></div>
+<header class="header">
+    <div class="header-wrapper">
+        <a href="../main/main.html"><div class="header-title">
+            <h1>Cozy House</h1>
+            <p>Shelter for pets in Boston</p>
+        </div></a>
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <a class="nav-logo" href="pets.html">
+                    <div class="header-title">
+                        <h1 class="title">Cozy House</h1>
+                        <p class="title-text">Shelter for pets in Boston</p>
+                    </div>
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a class="list__item-link" href="../main/main.html">About the shelter</a></li>
+                    <li class="nav-list__item"><a class="list__item-link disabled-link" href="pets.html">Our pets</a></li>
+                    <li class="nav-list__item"><a class="list__item-link" href="../main/main.html#help">Help the shelter</a></li>
+                    <li class="nav-list__item"><a class="list__item-link" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="section our">
+        <div class="our-wrapper">
+            <h3 class="our__title">Our friends who <br> are looking for a house</h3>
+            <div class="slider">
+                <div class="cards"></div>
+                <div class="btn-wrapper">
+                    <div class="arr-wrapper disabled-btn first">&lt;&lt;</div>
+                    <div class="arr-wrapper disabled-btn prev">&lt;</div>
+                    <div class="arr-wrapper page">1</div>
+                    <div class="arr-wrapper next">&gt;</div>
+                    <div class="arr-wrapper last">&gt;&gt;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="contacts" class="footer">
+    <div class="footer-wrapper">
+        <div class="contacts">
+            <h3 class="contacts__title">For questions and suggestions</h3>
+            <a href="mailto:email@shelter.com" class="contacts__email footer__link">email@shelter.com</a>
+            <a href="tel:+136745677554" class="contacts__tel footer__link">+13 674 567 75 54</a>
+        </div>
+        <div class="visit">
+            <h3 class="visit__title">We are waiting for your visit</h3>
+            <a href="https://goo.gl/maps/bVt9quxg28disJ8e7" class="visit__bos footer__link" target="_blank">1
+                Central
+                Street, Boston (entrance from the store)</a>
+            <a href="https://goo.gl/maps/GKxTst6PumY3onb9A" class="visit__lon footer__link" target="_blank">18 South
+                Park, London</a>
+        </div>
+        <div class="footer__img"></div>
+    </div>
+</footer>
+<script type="module" src="../index.js"></script>
+<script type="module" src="pets.js"></script>
+</body>
+</html>
