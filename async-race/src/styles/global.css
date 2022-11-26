@@ -9,13 +9,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
   font-family: "Arial", sans-serif;
 }
 
-body {
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +25,12 @@ body {
   background-color: black;
 }
 
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.text,
 .error {
   font-size: 25px;
   text-align: center;

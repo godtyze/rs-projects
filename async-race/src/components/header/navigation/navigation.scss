@@ -1,11 +1,55 @@
+@use '../../../consts/variables' as v;
+
+.nav__list,
 .nav {
   display: flex;
   max-width: 350px;
   width: 100%;
   column-gap: 20px;
   align-items: center;
+  margin-left: auto;
+
+  &__link {
+    color: v.$mainColor;
+
+    &:hover {
+      color: v.$headerColor;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    font-size: 28px;
+    max-width: 190px;
+    width: 100%;
+    border: 2px solid v.$mainColor;
+    color: v.$mainColor;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: color ease-in-out 0.3s;
+    text-align: center;
+    padding: 15px;
+
+    &.active {
+      color: v.$secondaryColor;
+      background-color: v.$mainColor;
+      transition: color ease-in-out 0.3s;
+      pointer-events: none;
+
+      &:hover {
+        color: v.$headerColor;
+      }
+    }
+
+  }
 
   @media (max-width: 880px) {
     order: 2;
+    margin-left: 0;
   }
 }

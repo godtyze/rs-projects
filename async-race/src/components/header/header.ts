@@ -10,8 +10,11 @@ export default class Header extends Control{
 
     this.navigation = new Navigation();
 
-    const title = new Control('h1', ['header__title'], 'Async Race').element;
+    const title = new Control('h1', ['header__title']).element;
+    const titleLink = new Control('a', ['header__title-link'], 'Async Race').element;
+    titleLink.setAttribute('href', '/');
+    title.append(titleLink);
 
-    this.element.append(this.navigation.element, title);
+    this.element.append(title, this.navigation.element);
   }
 }

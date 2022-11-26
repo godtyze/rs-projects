@@ -1,7 +1,7 @@
 import Control from "../../../utils/control";
 import './winners.scss';
 import Table from "./table/table";
-import Pages from "../../pages/pages";
+import Pagination from "../../pagination/pagination";
 import Store from "../../../store/store";
 import consts from "../../../consts/consts";
 
@@ -14,14 +14,14 @@ export default class Winners extends Control {
 
   bestTime: Control;
 
-  pagesField: Pages;
+  pagesField: Pagination;
 
 
   constructor() {
-    super('section', ['winners']);
+    super('main', ['main', 'winners']);
     this.winnersTable = new Table();
     this.winnersCounter = new Control('h2', ['winners__title'], `Winners: ${Store.winnersCount}`);
-    this.pagesField = new Pages(['winners__pages']);
+    this.pagesField = new Pagination(['winners__pages']);
     this.totalWins = new Control('div', ['table-header__wins'], 'Wins Counter');
     this.bestTime = new Control('div', ['table-header__best-time'], 'Best time');
 
@@ -34,7 +34,7 @@ export default class Winners extends Control {
 
   private render(): void {
     this.element.innerHTML = '';
-    this.pagesField = new Pages(['winners__pages']);
+    this.pagesField = new Pagination(['winners__pages']);
     this.winnersCounter = new Control('h2', ['winners__title'], `Winners: ${Store.winnersCount}`);
     this.totalWins = new Control('div', ['table-header__wins'], 'Wins Counter');
     this.bestTime = new Control('div', ['table-header__best-time'], 'Best time');

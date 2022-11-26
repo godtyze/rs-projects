@@ -1,17 +1,27 @@
 import './navigation.scss';
-import Button from "../../button/button";
 import Control from "../../../utils/control";
 
 export default class Navigation extends Control{
-  readonly garageBtn: Button;
-  readonly winnersBtn: Button;
+  readonly garageLink: Control;
+  readonly winnersLink: Control;
 
   constructor() {
     super('nav', ['header__nav', 'nav']);
 
-    this.garageBtn = new Button('Garage', ['nav__btn', 'active']);
-    this.winnersBtn = new Button('Winners', ['nav__btn']);
+    const navList = new Control('ul', ['nav__list']);
 
-    this.element.append(this.garageBtn.element, this.winnersBtn.element);
+    this.garageLink = new Control('a', ['nav__link'], 'Garage');
+    this.garageLink.element.setAttribute('href', '/garage');
+
+    this.winnersLink = new Control('a', ['nav__link'], 'Winners');
+    this.winnersLink.element.setAttribute('href', '/winners');
+
+    [this.garageLink, this.winnersLink].forEach(link => {
+      const li = new Control('li', ['nav__list-item']);
+      li.element.append(link.element);
+      navList.element.append(li.element);
+    });
+
+    this.element.append(navList.element);
   }
 }

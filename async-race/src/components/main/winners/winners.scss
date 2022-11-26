@@ -1,13 +1,15 @@
 @use '../../../consts/variables' as v;
 
 .winners {
-  display: none;
+  display: flex;
   align-items: center;
   max-width: 520px;
   width: 100%;
   flex-direction: column;
   color: v.$headerColor;
+  align-self: center;
   row-gap: 20px;
+  justify-content: flex-start;
 
   &__pages {
     width: 20%;

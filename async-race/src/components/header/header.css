@@ -10,8 +10,9 @@
   }
 }
 .header__title {
-  margin-left: auto;
   font-size: 75px;
+}
+.header__title-link {
   color: #f8e8bb;
 }
 @media (max-width: 880px) {

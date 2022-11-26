@@ -3,7 +3,7 @@ import Control from "../../utils/control";
 
 export default class Footer extends Control{
   constructor() {
-    super('div', ['footer']);
+    super('footer', ['footer']);
 
     const githubLink = new Control('a', ['footer__link-github']).element;
     githubLink.setAttribute('href', 'https://github.com/godtyze');

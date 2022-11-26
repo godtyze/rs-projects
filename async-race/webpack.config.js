@@ -21,7 +21,8 @@ module.exports = {
     static: {
       directory: './src',
       watch: true
-    }
+    },
+    historyApiFallback: true
   },
   devtool: 'source-map',
   plugins: [

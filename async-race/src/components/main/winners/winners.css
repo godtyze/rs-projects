@@ -1,11 +1,13 @@
 .winners {
-  display: none;
+  display: flex;
   align-items: center;
   max-width: 520px;
   width: 100%;
   flex-direction: column;
   color: #FFFFFF;
+  align-self: center;
   row-gap: 20px;
+  justify-content: flex-start;
 }
 .winners__pages {
   width: 20%;

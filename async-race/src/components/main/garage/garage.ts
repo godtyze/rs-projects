@@ -6,7 +6,7 @@ import CarsField from "./cars-field/cars-field";
 import {createCar, createWinner, deleteCar, deleteWinner, updateCar, updateWinner} from "../../../api/api";
 import {CarInfo, newCar, Race} from "../../../types/types";
 import { disableBtn, enableBtn, getRandomColor, getRandomName, startDrive, stopDrive } from "../../../utils/utils";
-import Pages from "../../pages/pages";
+import Pagination from "../../pagination/pagination";
 import ModalWindow from "../../modal-window/modal-window";
 import consts from "../../../consts/consts";
 
@@ -15,18 +15,18 @@ export default class Garage extends Control {
 
   carsCounter: Control;
 
-  pagesField: Pages
+  pagesField: Pagination
 
   carsField: CarsField;
 
   modalWindow: ModalWindow;
 
   constructor() {
-    super('section', ['garage']);
+    super('main', ['main', 'garage']);
     this.inputsField = new InputsField();
     this.carsCounter = new Control('h2', ['garage__title'], `Cars in garage: ${Store.carsCount}`);
     this.carsField = new CarsField();
-    this.pagesField = new Pages(['garage__pages']);
+    this.pagesField = new Pagination(['garage__pages']);
     this.modalWindow = new ModalWindow();
 
     this.handleCreateCarBtn();
@@ -55,7 +55,7 @@ export default class Garage extends Control {
       }
     );
     this.carsCounter = new Control('h2', ['garage__title'], `Cars in garage: ${Store.carsCount}`);
-    this.pagesField = new Pages(['garage__pages']);
+    this.pagesField = new Pagination(['garage__pages']);
 
     this.handlePageButtons();
 

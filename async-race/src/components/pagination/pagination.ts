@@ -3,7 +3,7 @@ import Button from "../button/button";
 import './pages.scss';
 import Store from "../../store/store";
 
-export default class Pages extends Control {
+export default class Pagination extends Control {
   pageCounter: Control;
 
   nextPageBtn: Button;
