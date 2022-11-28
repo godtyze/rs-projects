@@ -8,3 +8,12 @@ RS School tasks from school's private repository
 * [shelter](https://github.com/rolling-scopes-school/tasks/tree/master/stage1/stream1/shelter)
 * [online-store](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/online-store/README.md)
 * [async-race](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md)
+
+**Deploys:**
+
+* [portfolio](https://godtyze.github.io/rs-projects/portfolio/)
+* [movie-app](https://godtyze.github.io/rs-projects/movie-app/)
+* [tic-tac-toe](https://godtyze.github.io/rs-projects/tic-tac-toe/)
+* [shelter](https://godtyze.github.io/rs-projects/shelter/pages/main/main)
+* [online-store](https://godtyze.github.io/rs-projects/online-store/)
+* [async-race](https://godtyze.github.io/rs-projects/async-race/)
